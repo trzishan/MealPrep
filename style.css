@@ -4,16 +4,43 @@
     box-sizing: border-box;
 }
 
+#searchContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#searchBox{
+    height: 48px;
+    width: 60vw;
+    margin: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    
+    text-align: center;
+    font-size: large;
+}
+
 #cardList{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .card{
     width: fit-content;
     max-width: 350px;
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 16px;
     margin: 8px;
     padding: 8px;
+}
+
+.card img{
+    height: 200px;
+    border-radius: 8px;
 }

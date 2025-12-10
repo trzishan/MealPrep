@@ -28,7 +28,7 @@ async function loadAll() {
     
     // Add the "card" CSS class to style the card element
     card.setAttribute("class", "card");
-    
+
     
     // Set the inner HTML of the card (currently empty, to be populated with meal details)
     card.innerHTML = `
@@ -36,12 +36,12 @@ async function loadAll() {
                 <div class="image">
                     <img src="${meal.strMealThumb}" alt="Photo of ${meal.strMeal}">
                 </div>
-            <div class="cardText">
-                <div class="khanarNam">Name: ${meal.strMeal}</div>
-                <div class="type">Category: ${meal.strCategory}</div>
-                <div class="origin">Area: ${meal.strArea}</div>
-            </div>
-        </a>
+                <div class="cardText">
+                    <div class="khanarNam">Name: ${meal.strMeal}</div>
+                    <div class="type">Category: ${meal.strCategory}</div>
+                    <div class="origin">Area: ${meal.strArea}</div>
+                </div>
+            </a>
         `;
     
     // Append the card to the cardList container to display it on the page
