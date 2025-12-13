@@ -1,5 +1,6 @@
 #main{
     justify-content: flex-start;
+    flex-direction: column;
 }
 
 .intro{
@@ -21,4 +22,15 @@
     justify-content: end;
     margin: 0 16px;
     margin-bottom: 8px;
+}
+
+
+.ingredientList{
+    margin: 0px 32px;
+}
+
+
+.procedure{
+    margin: 16px;
+    overflow-wrap: break-word;
 }

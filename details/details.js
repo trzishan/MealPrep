@@ -24,17 +24,39 @@ async function getReq(fetchEndpoint){
 
     detail.appendChild(intro);
 
-    const recipe = document.createElement('div');
-    recipe.setAttribute('class', 'recipe');
+    const ingredientList = document.createElement('ul');
+    ingredientList.setAttribute('class', 'ingredientList');
 
-    meal.forEach(entry => {
-        if ('ingredient' in entry){
-            console.log(entry)
+
+    for (entry in meal) {
+        // Checks if the entry is and ingredient and if it has a value
+        if (entry.includes('strIngredient') && meal[entry] !== ''){
+            const ingredient = document.createElement('li');
+            const ingText = `${meal[entry]}`
+            // console.log(ingText)
+            const number = parseInt(entry.toString().match( /\d+/g))
+            const measure = `strMeasure${number}`
+            // console.log(measure)
+
+            const strinToPrint = `${ingText}: ${meal[measure]}`
+            console.log(strinToPrint)
+
+            ingredient.innerHTML = `${strinToPrint}`
+            ingredientList.appendChild(ingredient)
+
         }
         
-    });
+    };
 
-    detail.appendChild(recipe);
+    const procedure = document.createElement('div');
+    procedure.setAttribute('class', 'procedure')
+    procedure.innerHTML= `
+        <h2>Procedure</h2>
+        <pre>${meal['strInstructions']}</pre>
+    `
+
+    detail.appendChild(ingredientList);
+    detail.appendChild(procedure)
 }
 
 getReq(fetchEndpoint.toString());

@@ -9,10 +9,17 @@
 #searchContainer{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url(../images/image.png);
     width: 100vw;
     position: fixed;
     top: 0;
+}
+
+#searchContainer > a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px black;
 }
 
 #searchBox{
