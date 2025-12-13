@@ -1,0 +1,24 @@
+#main{
+    justify-content: flex-start;
+}
+
+.intro{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 16px;
+
+}
+
+.intro  img {
+    height: 150px;
+    border-radius: 4px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0 16px;
+    margin-bottom: 8px;
+}
