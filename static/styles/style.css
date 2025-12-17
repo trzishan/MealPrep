@@ -64,3 +64,28 @@ a{
     padding: 4px;
     margin: 4px 0;
 }
+
+@media screen and (max-width: 600px) {
+    #searchContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main{
+        margin-top: 120px;
+    }
+
+    #searchBox{
+        width: 90vw;
+        min-width: unset;
+    }
+
+    .card{
+        width: 90vw;
+    }
+
+    .card img{
+        height: auto;
+        width: 100%;
+    }
+}
