@@ -1,4 +1,8 @@
-#main{
+body{
+    width: 100vw;
+}
+
+#details{
     justify-content: flex-start;
     flex-direction: column;
 }
