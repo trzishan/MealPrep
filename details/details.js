@@ -18,7 +18,7 @@ async function getReq(fetchEndpoint){
             <div class="info">
                 <h1>${meal.strMeal}</h1>
                 <p>${meal.strArea} ${meal.strCategory} dish</p>
-                <a href="${meal.strYoutube} ↗" target="blank">Watch video</a>
+                <a href="${meal.strYoutube}" target="blank">Watch video ↗</a>
             </div>
     `
 
