@@ -103,14 +103,14 @@ searchBox.addEventListener('submit', async function (event) {
     
     // Set the inner HTML of the card (currently empty, to be populated with meal details)
     card.innerHTML = `
-            
+
                 <div class="image">
                     <img src="${meal.strMealThumb}" alt="Photo of ${meal.strMeal}">
                 </div>
                 <div class="cardText">
-                    <div class="khanarNam"><b>Name:</b> ${meal.strMeal}</div>
+                    <div class="mealTitle"><b>Name:</b> ${meal.strMeal}</div>
                     <div class="type"><b>Category:</b> ${meal.strCategory}</div>
-                    <a href="details/?id=${meal.idMeal}"><button class="simorButton"> See Details</button></a>
+                    <a href="details/?id=${meal.idMeal}"><button class="seeMoreButton"> See Details</button></a>
                 </div>
             
         `;
